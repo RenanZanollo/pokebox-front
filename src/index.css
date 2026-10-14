@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Marca ──────────────────────────────── */
+  --color-brand:        #2B6CB0;   /* ações principais, links */
+  --color-brand-hover:  #245C99;
+  --color-brand-soft:   #E8F0F9;   /* fundo de item ativo na sidebar */
+
+  --color-accent:       #F6C445;   /* destaques, badges */
+  --color-accent-soft:  #FEF6E0;
+
+  --color-danger:       #E53E3E;   /* excluir, erro de validação */
+  --color-danger-hover: #C53030;
+  --color-danger-soft:  #FDECEC;   /* fundo do ícone no modal de exclusão */
+
+  /* ── Superfícies ────────────────────────── */
+  --color-surface: #F5F6F8;        /* fundo da página */
+  --color-card:    #FFFFFF;        /* cards, modais, sidebar */
+  --color-line:    #E5E7EB;        /* bordas e divisores */
+
+  /* ── Texto ──────────────────────────────── */
+  --color-ink:       #1A202C;      /* títulos */
+  --color-ink-soft:  #4A5568;      /* corpo */
+  --color-ink-muted: #A0AEC0;      /* legendas, placeholders */
+
+  /* ── Tipografia ─────────────────────────── */
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-sans:    "Inter", system-ui, sans-serif;
+
+  /* ── Formas ─────────────────────────────── */
+  --radius-card:  1rem;
+  --radius-modal: 1.25rem;
+
+  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.06), 0 1px 2px rgb(0 0 0 / 0.04);
+}
+
+/* Estilos globais — o único lugar onde CSS solto se justifica */
+body {
+  background-color: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
